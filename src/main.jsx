@@ -9,6 +9,7 @@ import {
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Review from './components/Review/Review';
+import GrandPa from './components/GrandPa/GrandPa';
 
 const router =createBrowserRouter([
   {
@@ -22,8 +23,12 @@ const router =createBrowserRouter([
       },
       {
         path:'/review',
-        element:<Review></Review>
+        element:<Review></Review>,
       },
+      {
+        path:'/grandpa',
+        element:<GrandPa></GrandPa>
+      }
     ]
   }
 ])

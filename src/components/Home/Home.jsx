@@ -1,11 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import Header from '../Header/Header';
+
 
 const Home = () => {
     return (
         <div>
-            <h2>This is my Home</h2>
+            
+            <Header></Header>
             <Outlet></Outlet>
+            <ToastContainer />
         </div>
     );
 };
